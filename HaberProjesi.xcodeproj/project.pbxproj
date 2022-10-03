@@ -13,6 +13,10 @@
 		FC73C75B28EAE6FB00F408B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC73C75928EAE6FB00F408B3 /* Main.storyboard */; };
 		FC73C75D28EAE6FE00F408B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC73C75C28EAE6FE00F408B3 /* Assets.xcassets */; };
 		FC73C76028EAE6FE00F408B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC73C75E28EAE6FE00F408B3 /* LaunchScreen.storyboard */; };
+		FC73C76828EAE96200F408B3 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73C76728EAE96200F408B3 /* NewsCell.swift */; };
+		FC73C76E28EAF07C00F408B3 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73C76D28EAF07C00F408B3 /* News.swift */; };
+		FC73C77028EAF53000F408B3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73C76F28EAF53000F408B3 /* Webservice.swift */; };
+		FC73C77228EAFC9000F408B3 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC73C77128EAFC9000F408B3 /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FC73C75C28EAE6FE00F408B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC73C75F28EAE6FE00F408B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC73C76128EAE6FE00F408B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC73C76728EAE96200F408B3 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		FC73C76D28EAF07C00F408B3 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		FC73C76F28EAF53000F408B3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		FC73C77128EAFC9000F408B3 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		FC73C75228EAE6FB00F408B3 /* HaberProjesi */ = {
 			isa = PBXGroup;
 			children = (
-				FC73C75328EAE6FB00F408B3 /* AppDelegate.swift */,
-				FC73C75528EAE6FB00F408B3 /* SceneDelegate.swift */,
-				FC73C75728EAE6FB00F408B3 /* ViewController.swift */,
+				FC73C76C28EAF04E00F408B3 /* Service */,
+				FC73C76B28EAF04800F408B3 /* ViewModel */,
+				FC73C76A28EAF04400F408B3 /* Model */,
+				FC73C76928EAF03E00F408B3 /* View */,
 				FC73C75928EAE6FB00F408B3 /* Main.storyboard */,
 				FC73C75C28EAE6FE00F408B3 /* Assets.xcassets */,
 				FC73C75E28EAE6FE00F408B3 /* LaunchScreen.storyboard */,
 				FC73C76128EAE6FE00F408B3 /* Info.plist */,
 			);
 			path = HaberProjesi;
+			sourceTree = "<group>";
+		};
+		FC73C76928EAF03E00F408B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC73C75328EAE6FB00F408B3 /* AppDelegate.swift */,
+				FC73C75528EAE6FB00F408B3 /* SceneDelegate.swift */,
+				FC73C76728EAE96200F408B3 /* NewsCell.swift */,
+				FC73C75728EAE6FB00F408B3 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC73C76A28EAF04400F408B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC73C76D28EAF07C00F408B3 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC73C76B28EAF04800F408B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC73C77128EAFC9000F408B3 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC73C76C28EAF04E00F408B3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FC73C76F28EAF53000F408B3 /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +184,10 @@
 			files = (
 				FC73C75828EAE6FB00F408B3 /* ViewController.swift in Sources */,
 				FC73C75428EAE6FB00F408B3 /* AppDelegate.swift in Sources */,
+				FC73C77028EAF53000F408B3 /* Webservice.swift in Sources */,
+				FC73C76828EAE96200F408B3 /* NewsCell.swift in Sources */,
+				FC73C77228EAFC9000F408B3 /* NewsViewModel.swift in Sources */,
+				FC73C76E28EAF07C00F408B3 /* News.swift in Sources */,
 				FC73C75628EAE6FB00F408B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
